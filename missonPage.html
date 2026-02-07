@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>misson page</title>
+    <!--tai giao dien cua trang-->
+    <link rel="stylesheet" href="style.css">
+    <!--tai truoc trang dieu huong giao dien app-->
+    <link rel="prefetch" href="createMission.html">
+    <link rel="prefetch" href="index.html">
+  <body>
+   <div id="MissonPage">
+     <div id="header">
+       <button id="nutMenu" onclick="tabMenu">menu</button>
+       <div id="tenApp">Notes</div>
+         <button id="setting">day</button><!--day la tinh nang sap them-->
+     </div>
+     <div id="khungGiaoDien">
+       <div id="missonRender"></div>
+        <button id="createMissonButton" onclick="createMisson()">+</button>
+     </div>
+     <div id="dieuHuongGiaoDien">
+      <a href="index.html">
+       <button id="notePage" onclick="index.html">Notes</button>
+      </a>
+     </div>
+   </div>
+   <script src="script.js"></script>
+  </body>
+</html>
+<!--ghi nho
+1. href: la dia chi trang
+2. src: la nguon da duoc nhung khong phai dia chi tai nguyen
+3. the a la de gan link vao du lieu duoc no bao quanh
+4. prefetch la yeu cau trinh tai san tai nguyen chuyen doi khi nguoi dung o trang goc
+-->
