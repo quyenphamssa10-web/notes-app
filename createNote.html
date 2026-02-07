@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trang tao note</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="prefetch" href="index.html">
+    <link rel="prefetch" href="trangNhiemVu.html">
+  <body>
+   <div id="createNote">
+     <div id="header">
+       <a href="index.html">
+         <button id="nutQuayLai" onclick="index.html">quay lai</button>
+       </a>
+       <button id="noteSave" onclick="noteSave()">save</button>
+       <button id="chinhHinhNen" onclick="chinhhHinhNen()">doi hinh nen</button>
+       
+       <div id="tenApp">Notes</div>
+       <!--cai nay la de goi ham mo popup va chon icon-->
+          <button id="iconButton" onclick="popupIcon()">icon</button>
+     </div>
+     <div id="khungGiaoDien">
+       <div id="backgroundNote"></div>
+       <div>
+         <input type="text" id="tieuDeNote" placeholder="ban dang nghi gi?">
+         <input type="text" id="noiDungNote" placeholder="hay viet nhung suy nghi trong dau ban luc nay!">
+       </div>
+     </div>
+   </div>
+   
+   <script src="script.js"></script>
+  </body>
+</html>
+<!--rut kinh nghiem:
+1. type la cach dinh dang noi dung nhap cho khung nhap lieu. no co the bien dang van ban nhap thanh text cho chu binh thuong, date cho ngay
+password cho mat khau, checkbox cho o tich chon, va date cho ngay
+2. placeholder la van ban giu cho. no la 1 doan van ban hien thi khi app note chu nhap gi ben trong
+3. textarea la the dang comment 
+-->
